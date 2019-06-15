@@ -1,5 +1,6 @@
 .heder-color{  
   background-color: #1b3d5f !important;
+  box-shadow: -1px 5px 5px 2px rgba(0,0,0,0.86);
 }
 .logo-text{
   color: white !important;

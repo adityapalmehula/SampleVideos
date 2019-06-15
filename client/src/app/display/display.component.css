@@ -1,8 +1,16 @@
 .padding-top{
-	padding-top: 57px;
+	/*padding-top: 45px*/
 }
 .heading-css{
 	background-color: #1b3d5f;
 	color: white !important;
 	font-size: 100%;
+}
+.items-space{
+	font-size: 98%;
+}
+.pt-css{
+	/*border-radius: 12px;*/
+  box-shadow: 7px 3px 10px 0px rgba(0,0,0,0.86);
+	background-color: #D2CFCF;
 }

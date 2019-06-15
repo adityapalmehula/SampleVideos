@@ -7,9 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DisplayComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+  	) { }
 
   ngOnInit() {
+  	this.getInformations()
   }
-
+  
+  getInformations(){
+  // 	this.classesService.getClasses().subscribe((response)=>{
+		// 	this.messageService.showLoader.emit(false);
+		// 	if(response['success'] && response['data']){
+		// 		this.classArray=response.data.classes;
+		// 	}
+		// },error=>{  
+		// 	this.messageService.showLoader.emit(false);
+		// 	this.errorMessage=error.json().msg;
+		// 	this.handleError(error);
+		// })
+  // }
 }
