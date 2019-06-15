@@ -15,6 +15,7 @@ export class DisplayComponent implements OnInit {
   }
   
   getInformations(){
+  }
   // 	this.classesService.getClasses().subscribe((response)=>{
 		// 	this.messageService.showLoader.emit(false);
 		// 	if(response['success'] && response['data']){
