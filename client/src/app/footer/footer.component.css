@@ -6,9 +6,9 @@
     line-height: 60px;
     background-color: #1b3d5f;
   }
-  .text-muted{
+  .align-text-bottom{
     color: white !important;
+    /*text-align: center !important;*/
   }
-
-
+  
 
