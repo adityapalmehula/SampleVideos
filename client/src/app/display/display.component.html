@@ -2,55 +2,117 @@
 	<div class="row">
 		<div class="col-6 col-md-3 pt-css">
 			<div class="list-group pt-4 ">
-				<a class="list-group-item list-group-item-action heading-css">
+				<a class="list-group-item list-group-item-action heading-css pt-2 pb-2">
 					Sample Videos
 				</a>
-				<a class="list-group-item list-group-item-action pt-2 pb-2 items-space">MP4</a>
-				<a class="list-group-item list-group-item-action pt-2 pb-2 items-space">FLV</a>
-				<a class="list-group-item list-group-item-action pt-2 pb-2 items-space">MKV</a>
-				<a class="list-group-item list-group-item-action pt-2 pb-2 items-space">3GP</a>
+				<a class="list-group-item list-group-item-action pt-1 pb-1 items-space" *ngFor="let video of videosArray; let i=index;" (click)="getFileName(video)">{{video?.title}}</a>
 			</div>
 
-			<div class="list-group pt-4">
-				<a class="list-group-item list-group-item-action heading-css">
+			<div class="list-group pt-3">
+				<a class="list-group-item list-group-item-action heading-css pt-2 pb-2">
 					Sample Images
 				</a>
-				<a class="list-group-item list-group-item-action pt-2 pb-2 items-space">JPG</a>
-				<a class="list-group-item list-group-item-action pt-2 pb-2 items-space">PNG</a>
-				<a class="list-group-item list-group-item-action pt-2 pb-2 items-space">GIF</a>
-				<a class="list-group-item list-group-item-action pt-2 pb-2 items-space">SVG</a>
+				<a class="list-group-item list-group-item-action pt-1 pb-1 items-space"  *ngFor="let image of imagesArray; let i=index;" (click)="getFileName(image)">{{image?.title}}</a>
 			</div>
 
-			<div class="list-group pt-4">
-				<a class="list-group-item list-group-item-action heading-css">
+			<div class="list-group pt-3">
+				<a class="list-group-item list-group-item-action heading-css pt-2 pb-2">
 					Sample Audio
 				</a>
-				<a class="list-group-item list-group-item-action pt-2 pb-2 items-space">MP3</a>
+				<a class="list-group-item list-group-item-action pt-1 pb-1 items-space" *ngFor="let audio of audiosArray; let i=index;" (click)="getFileName(audio)">{{audio?.title}}</a>
 			</div>
 
-			<div class="list-group pt-4">
-				<a class="list-group-item list-group-item-action heading-css">
+			<div class="list-group pt-3">
+				<a class="list-group-item list-group-item-action heading-css pt-2 pb-2">
 					Sample Text
 				</a>
-				<a class="list-group-item list-group-item-action pt-2 pb-2 items-space">Text</a>
+				<a class="list-group-item list-group-item-action pt-1 pb-1 items-space" *ngFor="let text of textsArray; let i=index;" (click)="getFileName(text)">{{text?.title}}</a>
 			</div>
 
-			<div class="list-group pt-4">
-				<a class="list-group-item list-group-item-action heading-css">
+			<div class="list-group pt-3 pb-3">
+				<a class="list-group-item list-group-item-action heading-css pt-2 pb-2">
 					Sample Files
 				</a>
-				<a class="list-group-item list-group-item-action pt-2 pb-2 items-space">Sample XLS</a>
-				<a class="list-group-item list-group-item-action pt-2 pb-2 items-space">Sample CSV</a>
-				<a class="list-group-item list-group-item-action pt-2 pb-2 items-space">Sample Doc File</a>
-				<a class="list-group-item list-group-item-action pt-2 pb-2 items-space">Sample SQL</a>
-				<a class="list-group-item list-group-item-action pt-2 pb-2 items-space">Sample PPT</a>
-				<a class="list-group-item list-group-item-action pt-2 pb-2 items-space">Sample PDF</a>
-				<a class="list-group-item list-group-item-action pt-2 pb-2 items-space">Sample ZIP</a>
-				<a class="list-group-item list-group-item-action pt-2 pb-2 items-space">Sample PSD</a>
-				<a class="list-group-item list-group-item-action pt-2 pb-2 items-space">Sample DXF</a>
+				<a class="list-group-item list-group-item-action pt-1 pb-1 items-space" *ngFor="let file of filesArray; let i=index;" (click)="getFileName(file)">{{file?.title}}</a>
 			</div>
 		</div>
-		<div class="col-6 col-md-6">.col-6 .col-md-4</div>
-		<div class="col-6 col-md-3">.col-6 .col-md-4</div>
+		<!-- file body -->
+		<div class="col-6 col-md-6 pt-4">
+			<div class="row">
+				<div class="col-12 col-md-12">
+					<strong class="title-css">{{titile}}</strong>
+				</div>
+				<div class="col-12 col-md-12">
+					<p class="pt-2 mb-0">{{content1}}</p>
+				</div>
+				<div class="col-12 col-md-12">
+					<p class="pt-2 cont-css">{{content2}}</p>
+					<hr>
+				</div>
+
+				<div class="col-12 col-md-12">
+					<div class="card" style="width: 100%;">
+						<div class="card-header">
+							<div class="row">
+								<div class="col-3 col-md-3 text-center">
+									<strong>Size(mb)</strong>
+								</div>
+								<div class="col-3 col-md-3 text-center">
+									<strong>Format</strong>
+								</div>
+								<div class="col-3 col-md-3 text-center">
+									<strong>Resolution</strong>
+								</div>
+								<div class="col-3 col-md-3 text-center">
+									<strong>Download</strong>
+								</div>
+							</div>
+						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item text-center" *ngFor="let file of files; let i=index;">
+								<div class="row">
+									<div class="col-3 col-md-3">
+										<span>{{file?.size}}</span>
+									</div>
+									<div class="col-3 col-md-3">
+										<span>{{file?.format}}</span>
+									</div>
+									<div class="col-3 col-md-3">
+										<span>{{file?.Resolution}}</span>
+									</div>
+									<div class="col-3 col-md-3">
+										<span>Clik</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- file body close -->
+		<div class="col-6 col-md-3">
+			<div class="card mt-4 card-css" style="width: 100%;">
+				<div class="card-body">
+					<h5 class="card-title cart-ttly">Sample Video Download Statistics</h5>
+					<p class="card-text text-center">Total Downloaded	&nbsp; &nbsp; 899</p>
+				</div>
+			</div>
+			<div class="col-12 col-md-12 pt-2 pl-0">
+				<label class="feedback-css">Quick Feedback</label>
+			</div>
+			<div class="col-12 col-md-12">
+				<div class="row">
+					<div class="col-9 col-md-9 pl-0">
+						<input type="text" class="form-control con-css" placeholder="Email" aria-label="Username">
+						<textarea class="form-control con-css mt-2" placeholder="Give your valuable Feedback" rows="3"></textarea>
+					</div>
+					<div class="col-3 col-md-3 pl-0">
+						<button type="button" class="btn btn-primary btn-sm w-100">Send</button>
+					</div>
+				</div>
+			</div>
+
+		</div>
 	</div>
 </div>

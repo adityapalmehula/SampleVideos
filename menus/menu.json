@@ -1,0 +1,162 @@
+{
+	"videos":{
+		"videosArray":[
+			{  
+				"title":"MP4",
+				"type": "mp4",
+				"format":"video",
+				"fileName": "mp4file.json", 
+				"id": "1"
+			},
+			{  
+				"title":"FLV",
+				"type": "flv",
+				"format":"video",
+				"fileName": "flvfile.json", 
+				"id": "2"
+			},
+			{
+				"title":"MKV",
+				"type": "mkv",
+				"format":"video",
+				"fileName": "mkvfile.json", 
+				"id": "3"
+			},
+			{
+				"title":"3GP",
+				"type": "3gp",
+				"format":"video",
+				"fileName": "3gpfile.json", 
+				"id": "4"
+			}
+		]
+	},
+	"images":{
+		"imagesArray":[
+			{  
+				"title":"JPG",
+				"type": "jpg",
+				"format":"image",
+				"fileName": "jpgfile.json", 
+				"id": "1"
+			},
+			{  
+				"title":"PNG",
+				"type": "png",
+				"format":"image",
+				"fileName": "pngfile.json", 
+				"id": "2"
+			},
+			{
+				"title":"GIF",
+				"type": "gif",
+				"format":"image",
+				"fileName": "giffile.json", 
+				"id": "3"
+			},
+			{
+				"title":"SVG",
+				"type": "svg",
+				"format":"image",
+				"fileName": "svgfile.json", 
+				"id": "4"
+			}
+		]
+	},
+	"audios":{
+		"audiosArray":[
+			{  
+				"title":"MP3",
+				"type": "mp3",
+				"format":"audio",
+				"fileName": "mp3file.json", 
+				"id": "1"
+			}
+		]
+	},
+	"texts":{
+		"textsArray":[
+			{  
+				"title":"Text",
+				"type": "text",
+				"format":"text",
+				"fileName": "textfile.json", 
+				"id": "1"
+			}
+		]
+	},
+	"files":{
+		"filesArray":[
+			{  
+				"title":"Sample XLS",
+				"type": "xls",
+				"format":"file",
+				"fileName": "xlsfile.json", 
+				"id": "1"
+			},
+			{  
+				"title":"Sample CSV",
+				"type": "csv",
+				"format":"file",
+				"fileName": "csvfile.json", 
+				"id": "2"
+			},
+			{
+				"title":"Sample Doc File",
+				"type": "doc",
+				"format":"file",
+				"fileName": "docfile.json", 
+				"id": "3"
+			},
+			{
+				"title":"Sample SQL",
+				"type": "sql",
+				"format":"file",
+				"fileName": "sqlfile.json", 
+				"id": "4"
+			},
+			{
+				"title":"Sample PPT",
+				"type": "ppt",
+				"format":"file",
+				"fileName": "pptfile.json", 
+				"id": "5"
+			},
+			{
+				"title":"Sample PDF",
+				"type": "pdf",
+				"format":"file",
+				"fileName": "pdffile.json", 
+				"id": "6"
+			},
+			{
+				"title":"Sample Text File",
+				"type": "text",
+				"format":"file",
+				"fileName": "textfile.json", 
+				"id": "7"
+			},
+			{
+				"title":"Sample ZIP",
+				"type": "zip",
+				"format":"file",
+				"fileName": "zipfile.json", 
+				"id": "8"
+			},
+			{
+				"title":"Sample PSD",
+				"type": "psd",
+				"format":"file",
+				"fileName": "psdfile.json", 
+				"id": "9"
+			},
+			{
+				"title":"Sample DXF",
+				"type": "dxf",
+				"format":"file",
+				"fileName": "dxffile.json", 
+				"id": "10"
+			}
+		]
+	}
+}

@@ -1,10 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ng6-toastr-notifications';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { DisplayComponent } from './display/display.component';
 import { FooterComponent } from './footer/footer.component';
+import { MessageService } from './services/common/message.service';
+import { ErrorService } from './services/common/error.service';
 
 @NgModule({
   declarations: [
@@ -14,9 +19,12 @@ import { FooterComponent } from './footer/footer.component';
     FooterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot()
   ],
-  providers: [],
+  providers: [MessageService,ErrorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
