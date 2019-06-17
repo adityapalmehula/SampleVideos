@@ -1,0 +1,55 @@
+{
+  "fileContent": {
+    "titile": "Download Sample lv Videos",
+    "content1": "Are you a mobile app developer?",
+    "content2": "Are you looking for videos of different resolution and sizes to test while designing or developing a mobile app?",
+    "content3": "Sample-Videos.com is a 100% FREE service that allows programmers, testers, designers, developers to download sample videos for demo/test use. No matter what video format they use (MP4, FLV, MKV, 3GP); they will be able to test videos on any Smartphone without any hustle. This is a one stop destination for all sample video testing needs. Just search below for the relevant video formats in specific sizes, download them, and start testing.A mobile screen resolution can be a big challenge when it comes to watching videos online or offline. By testing out videos one can be rest assured regarding the video playback in an app, without annoying the end users. Choose from four different video extensions i.e. 3GP, MKV, FLV, and MP4. The best thing is all of these are free and very easy to download. We provide you with a specific and perfect resolution in all sizes possible with just one simple click. Check out the one which suits your requirements. All you need to do is hit the DOWNLOAD button, and get started.",
+    "fileType": ".mkv",
+    "files": [{
+      "id": "1",
+      "nameFile": "",
+      "size": "1",
+      "format": "mkv",
+      "Resolution": "1280x720"
+    },
+    {
+      "id": "2",
+      "nameFile": "",
+      "size": "2",
+      "format": "mkv",
+      "Resolution": "1280x720"
+    },
+    {
+      "id": "3",
+      "nameFile": "",
+      "size": "5",
+      "format": "mkv",
+      "Resolution": "1280x720"
+    },
+    {
+      "id": "4",
+      "nameFile": "",
+      "size": "10",
+      "format": "mkv",
+      "Resolution": "1280x720"
+    },
+    {
+      "id": "5",
+      "nameFile": "",
+      "size": "20",
+      "format": "mkv",
+      "Resolution": "1280x720"
+    },
+    {
+      "id": "6",
+      "nameFile": "",
+      "size": "30",
+      "format": "mkv",
+      "Resolution": "1280x720"
+    }          
+
+    
+  ]
+
+  }
+}

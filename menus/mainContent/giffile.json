@@ -1,0 +1,31 @@
+{
+  "fileContent": {
+    "titile": "Download Sample GIF Image",
+    "content1": "Want to test image in your application?",
+    "content2": "Sample-Videos allows programmers, testers, designers, developers to download sample image but even GIF Images with different sizes.",
+    "content3": "This service helps testers or developers to control image resolution in application, upload capacity of the servers, server configuration to handle uploads.",
+    "fileType": ".gif",
+    "files": [{
+      "id": "1",
+      "nameFile": "",
+      "size": "40kb",
+      "format": "gif"
+    },
+    {
+      "id": "2",
+      "nameFile": "",
+      "size": "135kb",
+      "format": "gif"
+    },
+    {
+      "id": "3",
+      "nameFile": "",
+      "size": "350kb",
+      "format": "gif"
+    }          
+
+    
+  ]
+
+  }
+}

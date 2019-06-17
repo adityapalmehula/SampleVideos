@@ -46,3 +46,7 @@
 .cont-css{
 	font-size: 95%;
 }
+.feedback-text{
+  font-size: small;
+  color: green;
+}

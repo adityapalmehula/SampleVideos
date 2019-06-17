@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewContainerRef, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewContainerRef, ElementRef,Inject } from '@angular/core';
 import { MenusService } from './../services/menus/menus.service';
 import { MessageService } from './../services/common/message.service';
 import { ErrorService } from './../services/common/error.service';
@@ -10,6 +10,8 @@ import { ErrorService } from './../services/common/error.service';
 	providers:[MenusService]
 })
 export class DisplayComponent implements OnInit {
+
+  
 	errorMessage: string;
 	videosArray:any=[];
 	imagesArray:any=[];
@@ -17,21 +19,27 @@ export class DisplayComponent implements OnInit {
 	textsArray:any=[];
 	filesArray:any=[];
 	fileName:string;
-
+  flag:boolean=false;
 	// file content -
 	titile:string;
 	content1:string;
 	content2:string;
 	fileType:string;
+  email:string;
+  feedback:string;
 	files:any=[];
 
 	constructor(
+   
 		private menusService : MenusService,
 		private messageService : MessageService,
 		private _vcr : ViewContainerRef,
 		private elRef: ElementRef,
 		private errorService: ErrorService
-		) { }
+		)
+    
+     { }
+
 
 	ngOnInit() {
 		this.getInformations()
@@ -79,6 +87,21 @@ export class DisplayComponent implements OnInit {
 			this.handleError(error);
 		})
 	}
+
+
+  sendfeed(){
+    let obj={
+      email:'',
+      feedback:''
+    };
+    console.log(this.email)
+    console.log(this.feedback)
+    this.email='';
+    this.feedback='';
+    this.flag=true;
+    }
+
+  
 
 	// Handle error
 	handleError(error) {

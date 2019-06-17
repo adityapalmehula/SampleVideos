@@ -1,0 +1,49 @@
+{
+  "fileContent": {
+    "titile": "Download Sample JPG Image",
+    "content1": "Want to test image in your application?",
+    "content2": "Sample-Videos allows programmers, testers, designers, developers to download sample image but even JPG Images with different sizes.",
+    "content3": "This service helps testers or developers to control image resolution in application, upload capacity of the servers, server configuration to handle uploads.",
+    "fileType": ".jpg",
+    "files": [{
+      "id": "1",
+      "nameFile": "",
+      "size": "50kb",
+      "format": "jpg"
+    },
+    {
+      "id": "2",
+      "nameFile": "",
+      "size": "100kb",
+      "format": "jpg"
+    },
+    {
+      "id": "3",
+      "nameFile": "",
+      "size": "200kb",
+      "format": "jpg"
+    },
+    {
+      "id": "4",
+      "nameFile": "",
+      "size": "500kb",
+      "format": "jpg"
+    },
+    {
+      "id": "5",
+      "nameFile": "",
+      "size": "1mb",
+      "format": "jpg"
+    },
+    {
+      "id": "6",
+      "nameFile": "",
+      "size": "2mb",
+      "format": "jpg"
+    }          
+
+    
+  ]
+
+  }
+}
